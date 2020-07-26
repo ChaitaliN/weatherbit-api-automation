@@ -24,35 +24,35 @@
 
 - Run all scenarios in parallel
 
-  ```
-  mvn clean test
-  ```
+      ```
+      mvn clean test
+      ```
 
 ## Reports
 
 - HTML report
 
-  ```
-  target/cucumber-html-report/index.html
-  ```
+      ```
+      target/cucumber-html-report/index.html
+      ```
 
-  ![Current weather report](./assets/current_weather_report.png)
-  ![Daily weather report](./assets/daily_forecast_report.png)
+      ![Current weather report](./assets/current_weather_report.png)
+      ![Daily weather report](./assets/daily_forecast_report.png)
 
 - Json report
 
-  ```
-  target/cucumber.json
-  ```
+      ```
+      target/cucumber.json
+      ```
 
 - Scenario report
 
-  ```
-  target/cucumber-pretty.txt
-  ```
+      ```
+      target/cucumber-pretty.txt
+      ```
 
 - XML report
 
-  ```
-  target/cucumber-results.xml
-  ```
+      ```
+      target/cucumber-results.xml
+      ```
