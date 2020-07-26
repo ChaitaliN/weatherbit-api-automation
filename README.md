@@ -24,7 +24,7 @@
 
 - Run all scenarios in parallel
 
-  ```bash
+  ```
   mvn clean test
   ```
 
@@ -32,7 +32,7 @@
 
 - HTML report
 
-  ```bash
+  ```
   target/cucumber-html-report/index.html
   ```
 
@@ -41,18 +41,18 @@
 
 - Json report
 
-  ```bash
+  ```
   target/cucumber.json
   ```
 
 - Scenario report
 
-  ```bash
+  ```
   target/cucumber-pretty.txt
   ```
 
 - XML report
 
-  ```bash
+  ```
   target/cucumber-results.xml
   ```
