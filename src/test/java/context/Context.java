@@ -3,5 +3,5 @@ package context;
 import java.util.Properties;
 
 public interface Context {
-    public Properties getProperties();
+    public Properties config();
 }

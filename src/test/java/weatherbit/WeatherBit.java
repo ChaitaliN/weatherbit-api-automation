@@ -15,14 +15,14 @@ public class WeatherBit {
 
     public WeatherBit(Context context) {
         this.context = context;
-        RestAssured.baseURI = context.getProperties().getProperty("url");
+        RestAssured.baseURI = context.config().getProperty("url");
     }
 
     // Current weather related methods
     public RequestSpecification currentByLatLon(double lat, double lon) {
         // Prepare request
         return given().queryParam("lat", lat).queryParam("lon", lon).queryParam("key",
-                context.getProperties().getProperty("key"));
+                context.config().getProperty("key"));
     }
 
     public Response getCurrent(RequestSpecification request) {
@@ -39,8 +39,7 @@ public class WeatherBit {
     // Daily forecast weather related methods
     public RequestSpecification dailyForecastByPostalCode(int postalCode) {
         // Prepare request
-        return given().queryParam("postal_code", postalCode).queryParam("key",
-                context.getProperties().getProperty("key"));
+        return given().queryParam("postal_code", postalCode).queryParam("key", context.config().getProperty("key"));
     }
 
     public Response getDailyForecast(RequestSpecification request) {
