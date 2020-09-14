@@ -2,7 +2,7 @@
 Feature: Current weather
 
   @current-weather-with-lat-lon
-  Scenario Outline: Current weather for give lat and lon
+  Scenario Outline: Current weather for given lat and lon
 
     Given I am provided with <lat> and <lon>
     When I look up the current weather
